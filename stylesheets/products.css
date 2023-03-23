@@ -1,0 +1,217 @@
+/* main section */
+.product-page-body{
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    height: auto;
+    background: #fbeaeb;
+    /* border: 2px solid red; */
+    /* padding-bottom: 100px; */
+}
+
+/* page heading */
+.title-heading{
+    width: 100%;
+    padding: 100px;
+    background: #e0a96d;
+    color: #111;
+    font-size: 2.3em;
+    text-align: center;
+    font-weight: 500;
+}
+
+/* page description */
+.page-desc{
+    text-align: center;
+    font-size: 0.9em;
+    color: #777;
+    padding: 40px 150px;
+}
+
+/* search and filter */
+.search-n-find{
+    /* border: 1px solid red; */
+    padding: 10px 40px;
+}
+
+.search-n-find > input[type='search'] {
+    padding: 7px 15px;
+    width: 250px;
+}
+
+.search-n-find > input[type='search']:focus{
+    border: 1px solid #e0a96d;
+    outline: 0;
+}
+
+.search-n-find > input[type='submit'] {
+    padding: 7px 15px;
+    font-size: 0.9em;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all .2s linear;
+    border: none;
+    background:#e0a96d;
+    margin: 0 4px;
+}
+
+.search-n-find > input[type='submit']:hover{
+    background:#2f3c7e;
+    color: #fff;
+}
+
+
+/* product catalogue */
+.product-catalogue{
+    width: 100%;
+    height: auto;
+    /* border: 2px solid #111; */
+    /* margin: 30px 0; */
+    padding: 20px 40px;
+}
+
+/* product-item */
+.pro-item{
+    border: 1px solid rgba(136, 136, 136, 0.363);
+    width: 100%;
+    height: 350px;
+    margin: 70px 0;
+    display: flex;
+    flex-direction: row;
+}
+
+/* product left side */
+.pro-left-side{
+    width: 35%;
+    height: 100%;
+    /* border: 2px solid rebeccapurple; */
+    border-radius: 0 25px 25px 0;
+}
+
+.pro-left-side > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: inherit;
+}
+
+/* product right side */
+.pro-right-side{
+    width: 65%;
+    height: 100%;
+    /* border: 2px solid rgb(153, 51, 122); */
+    padding: 40px;
+}
+
+/* product name */
+.pro-name{
+    font-size: 1.2em;
+    font-weight: 500;
+    color: #2f3c7e;
+    padding: 5px 0;
+    font-variant: small-caps;
+}
+
+/*product description  */
+.pro-desc{
+    font-size: 0.91em;
+    color: #333;
+    padding: 5px 100px 20px 0;
+    letter-spacing: 0.7px;
+    font-style: italic;
+    font-weight:500;
+}
+
+/*  prices, quantity and action */
+.pro-numbers{
+    width: 100%;
+    height: 70px;
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    margin-top: 40px;
+    align-items: center;
+    /* box-shadow: inset 2px 2px 5px #888; */
+}
+
+.item-price{
+    /* border: 1px solid #333; */
+    width: 100px;
+    height: 70%;
+    font-size: 1.6em;
+    display: grid;
+    place-content: center;
+    font-weight: 500;
+    color:rgb(2, 0, 20);
+    box-shadow: inset 2px 2px 5px #888, inset 2px 2px 5px rgb(107, 104, 104);
+}
+
+.quantity-box{
+    /* border: 2px solid #111; */
+    width: 200px;
+    height: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quantity-box > label{
+    color:#2f3c7e;
+    font-size: 1em;
+    font-weight: 500;
+}
+
+.quantity-box > input{
+    width: 60px;
+    padding: 5px;
+    margin: 0 2px;
+}
+
+.cart-box{
+    /* border: 2px solid #111; */
+    width: 200px;
+    height: 100%;
+    display: grid;
+    place-content: center;
+}
+
+.cart-box > a {
+    text-decoration: none;
+    color: #fff;
+    background: #2f3c7e;
+    padding: 10px 12px;
+    font-weight: 500;
+    transition: all .2s linear;
+}
+
+.cart-box > a:hover{
+    background: rgb(2, 0, 20);
+    color: #fff;
+    box-shadow: 2px 5px 5px #888;
+}
+
+/* product page pagination */
+.pagination{
+    margin: 70px 40px;
+    text-align: end;
+}
+
+.pagination > a{
+    text-decoration: none;
+    color: #2f3c7e;
+    padding: 10px 12px;
+    border: 1px solid #2f3c7e;
+    font-weight: 500;
+    box-shadow: inset 2px 3px 7px #aaa, 
+    inset 2px 3px 7px #888;
+    transition: all .2s linear;
+}
+
+.pagination > a:hover{
+    box-shadow: 2px 3px 7px #333;
+    background:#e0a96d;
+    color: #111;
+    border: 1px solid #111;
+}
